@@ -10,8 +10,7 @@ with open('./02/input') as file:
 
 
 def solve_part_1():
-    depth = 0
-    horizontal_position = 0
+    depth, horizontal_position = 0
     for direction in directions:
         if direction[0] == 'forward':
             horizontal_position += direction[1]
@@ -23,9 +22,7 @@ def solve_part_1():
 
 
 def solve_part_2():
-    aim = 0
-    depth = 0
-    horizontal_position = 0
+    aim, depth, horizontal_position = 0
     for direction in directions:
         if direction[0] == 'forward':
             horizontal_position += direction[1]
